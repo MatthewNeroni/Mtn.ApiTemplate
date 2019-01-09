@@ -25,6 +25,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Mtn.ApiTemplate.Api.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "mtn.ApiTemplate.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mtn.ApiTemplate.Api.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mtn.ApiTemplate.Api.Contracts.dll": {}
+        }
+      },
+      "mtn.ApiTemplate.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/mtn.ApiTemplate.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/mtn.ApiTemplate.Domain.dll": {}
+        }
       }
     }
   },
@@ -171,11 +194,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Mtn.ApiTemplate.Api.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Mtn.ApiTemplate.Api.Contracts/Mtn.ApiTemplate.Api.Contracts.csproj",
+      "msbuildProject": "../Mtn.ApiTemplate.Api.Contracts/Mtn.ApiTemplate.Api.Contracts.csproj"
+    },
+    "mtn.ApiTemplate.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Mtn.ApiTemplate.Domain/mtn.ApiTemplate.Domain.csproj",
+      "msbuildProject": "../Mtn.ApiTemplate.Domain/mtn.ApiTemplate.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "Mtn.ApiTemplate.Api.Contracts >= 1.0.0",
+      "NETStandard.Library >= 2.0.3",
+      "mtn.ApiTemplate.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -205,7 +240,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\matth\\OneDrive\\Documents\\Code\\Mtn.ApiTemplate\\Mtn.ApiTemplate\\Mtn.ApiTemplate.Api.Contracts\\Mtn.ApiTemplate.Api.Contracts.csproj": {
+              "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Code\\Mtn.ApiTemplate\\Mtn.ApiTemplate\\Mtn.ApiTemplate.Api.Contracts\\Mtn.ApiTemplate.Api.Contracts.csproj"
+            },
+            "C:\\Users\\matth\\OneDrive\\Documents\\Code\\Mtn.ApiTemplate\\Mtn.ApiTemplate\\Mtn.ApiTemplate.Domain\\mtn.ApiTemplate.Domain.csproj": {
+              "projectPath": "C:\\Users\\matth\\OneDrive\\Documents\\Code\\Mtn.ApiTemplate\\Mtn.ApiTemplate\\Mtn.ApiTemplate.Domain\\mtn.ApiTemplate.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
