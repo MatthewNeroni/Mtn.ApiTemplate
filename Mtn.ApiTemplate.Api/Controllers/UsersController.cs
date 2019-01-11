@@ -16,7 +16,6 @@ namespace Mtn.ApiTemplate.Api.Controllers
             _user = user;
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<User> Get(int id)
         {
