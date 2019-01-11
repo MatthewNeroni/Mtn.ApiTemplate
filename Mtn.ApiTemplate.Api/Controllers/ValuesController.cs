@@ -41,5 +41,12 @@ namespace Mtn.ApiTemplate.Api.Controllers
         public void Delete(int id)
         {
         }
+
+        [HttpGet]
+        [Route("BadRequestExample")]
+        public ActionResult BadRequestExample()
+        {
+            return new BadRequestObjectResult(new { message = "Anonymous Type response", id = 1});
+        }
     }
 }
