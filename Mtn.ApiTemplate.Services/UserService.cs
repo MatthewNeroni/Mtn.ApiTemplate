@@ -1,5 +1,5 @@
 using Mtn.ApiTemplate.Api.Contracts;
-using Mtn.ApiTemplate.Domain;
+using Mtn.ApiTemplate.Models;
 
 namespace Mtn.ApiTemplate.Services
 {

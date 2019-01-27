@@ -2,7 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mtn.ApiTemplate.Api.Contracts\Mtn.ApiTemplate.Api.Contracts.csproj" />
-    <ProjectReference Include="..\Mtn.ApiTemplate.Domain\Mtn.ApiTemplate.Domain.csproj" />
+    <ProjectReference Include="..\Mtn.ApiTemplate.Models\Mtn.ApiTemplate.Models.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

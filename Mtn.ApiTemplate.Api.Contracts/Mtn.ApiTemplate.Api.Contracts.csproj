@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Mtn.ApiTemplate.Domain\mtn.ApiTemplate.Domain.csproj" />
+    <ProjectReference Include="..\Mtn.ApiTemplate.Models\Mtn.ApiTemplate.Models.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

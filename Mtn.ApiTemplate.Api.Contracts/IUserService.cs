@@ -1,4 +1,4 @@
-using Mtn.ApiTemplate.Domain;
+using Mtn.ApiTemplate.Models;
 
 namespace Mtn.ApiTemplate.Api.Contracts
 {

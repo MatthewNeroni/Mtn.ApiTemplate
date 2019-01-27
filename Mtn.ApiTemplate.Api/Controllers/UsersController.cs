@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Mtn.ApiTemplate.Api.Contracts;
 using Mtn.ApiTemplate.Services;
-using Mtn.ApiTemplate.Domain;
+using Mtn.ApiTemplate.Models;
 
 namespace Mtn.ApiTemplate.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController
+    public class UsersController : ControllerBase
     {
         private IUserService _user;
 
